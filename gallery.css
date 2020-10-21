@@ -1,105 +1,100 @@
 @media(min-width: 479px) {
-    grid-template-areas: 
-    "header header header "
-    ".stacksoftires .stacksoftires .stacksoftires "
-    ".charger .charger .charger "
-    ".changetires .changetires .changetires "
-    ".cooktires .cooktires .cooktires "
-    ".radialtire .radialtire .radialtire "
-    ".onetire .onetire .onetire ";
-
-
-    body{
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
+    .container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(6,20%);
+        gap: 5px;
+        width: calc(100% - 20px);
+        
     }
 
-    .stacksoftires{
-        height: auto;
-        width: 100%;
-        grid-row: 1/6;
-    }
-
-    .changetires{
-        height: auto;
-        width: 100%;
-        grid-row: 2/6;
-    }
-
-    .charger{
-        height: auto;
-        width: 100%;
-        grid-row: 3/6;
-    }
-
-    .cooktires{
-        height: auto;
-        width: 100%;
-        grid-row: 4/6;
-    }
-
-    .radialtire{
-        height: auto;
-        width: 100%;
-        grid-row: 5/6;
-    }
-
-    .onetire{
-        height: auto;
-        width: 100%;
-        grid-row: 6/6;
+    img{
+        width: 200px;
+        height: 200px;
     }
 
 
+.stacksoftires{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 10px;
+}
 
+.changetires{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 10px;
+}
 
+.charger{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    padding: 10px;
+}
 
+.cooktires{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 10px;
+}
 
+.radialtire{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.onetire{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding: 10px;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
