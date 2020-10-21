@@ -1,0 +1,27 @@
+@media(min-width: 476) {
+
+    :root {
+        --color-base: hsl(white);
+        --color-text: white;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        margin: auto;
+        max-width: 95rem;
+
+        grid-template-areas: "";
+    }
+
+
+
+
+
+
+
+
+
+    
+}
