@@ -10,55 +10,55 @@
         <meta property="Tires" content="Tire">
         <link rel="shortcut icon" href="pexels-daniel-nettesheim-1162361.jpg" type="image/x-icon">
         
-        <title>Services</title>
         <link rel="stylesheet" href="services.css">
+        <title>Services</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="order.html">Order Page</a></li>
-                </ul>
-                <form>
-                    <input type="search" name="query" placeholder="Search site">
-                    <input type="submit" value="Search">
-                </form>
-            </nav>    
-        </header>
-
-        <main>
-            <section>
-                <ul>
-                    <li>
-                        <label for="data.js">Size of Tires</label>
-                        <select name="size" id="tire">
-                            <option value="12">12</option>
-                            <option value="14">14</option>
-                            <option value="16">16</option>
-                            <option value="18">18</option>
-                            <option value="20">20</option>
-                            <option value="22">22</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="data.js">Type of Rims</label>
-                        <select name="type" id="rims">
-                            <option value="Euro">Euro</option>
-                            <option value="Jdm">JDM</option>
-                            <option value="Muscle">Muscle</option>
-                            <option value="Suv">SUV</option>
-                            <option value="Pickups">PickUps</option>
-                            <option value="Classic">Classic</option>
-                        </select>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <aside>
+        <div class="wrapper">
+            <header class="header">
+                <img class="logoLeft" src="pexels-daniel-nettesheim-1162361.jpg">
+                <h2>Desert G Tires</h2>
+            </header>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="order.html">Order Page</a></li>
+                    </ul>
+                    <form class="search">
+                        <input type="search" name="query" placeholder="Search site">
+                        <input type="submit" value="Search">
+                    </form>
+                </nav>   
+            <main>
+                <section class="price">
+                    <ul>
+                        <li>
+                            <h3>Starting at $100</h3>
+                            <label for="data.js">Size of Tires</label>
+                            <select name="size" id="tire">
+                                <option value="12">12</option>
+                                <option value="14">14</option>
+                                <option value="16">16</option>
+                                <option value="18">18</option>
+                                <option value="20">20</option>
+                                <option value="22">22</option>
+                            </select>
+                        </li>
+                        <li>
+                            <h3>Starting at $250</h3>
+                            <label for="data.js">Type of Rims</label>
+                            <select name="type" id="rims">
+                                <option value="Euro">Euro</option>
+                                <option value="Jdm">JDM</option>
+                                <option value="Muscle">Muscle</option>
+                                <option value="Suv">SUV</option>
+                                <option value="Pickups">PickUps</option>
+                                <option value="Classic">Classic</option>
+                            </select>
+                        </li>
+                    </ul>
                     <form>
                         <legend>Special Request</legend>
                         <fieldset>
@@ -79,28 +79,31 @@
                                     <input type="checkbox" id="Patch" name="user.request">
                                         Patch
                                 </label></li>
-
-
-
-
-
-                                    <button type="reset">Clear</button>
+                                <li><label for="Tarnsmission">
+                                    <input type="checkbox" id="Tarnsmission" name="user.request">
+                                        Tarnsmission
+                                </label></li>
+                                <li><label for="Suspension">
+                                    <input type="checkbox" id="Suspension" name="user.request">
+                                        Suspension
+                                </label></li>
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Clear All</button>
                                 </ul>
                         </fieldset>
-                        
-
                     </form>
-                </aside>
-            </section>
-
-
-
-        </main>
-
-
-
-
-
-
+                </section>
+            <section class="customer">
+                    <ul>
+                        <li>Jeromeno said, "The Custormer Service is ireplaceable"</li>
+                        <li>Kyla said, "They take good care of your car"</li>
+                        <li>Muller said, "The Services are quick"</li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>Background: Matt Lipman<br>Creators: Fernando and Isaac <br> Contact: 829-092-3648 <br> 278 W Canyon dr Phoenix, Az</p>
+            </footer>
+        </div>
     </body>
 </html>
