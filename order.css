@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    grid-area: nav;
+    padding: 1rem;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    position: static;
+    top: 0;
+    left: 0;
+    margin: 1rem 0;
+    height: 100px;
+    justify-content: center;
+}
+.footer {
+    display: flex;
+    
+    grid-area: footer;
+    padding: 1rem;
+    justify-content: end;
+    color: dimgrey;
+    font-family: sans-serif;
+}
+
+
+dt{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+
+}
+
+a{
+    color: white;
+    font-size: 35px;
+}
+
+.search{
+    float: right;
+    position: relative;
+    left: 200px;
+
+}
