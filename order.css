@@ -17,6 +17,14 @@
     display: table;
 }
 
+dt {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    display: inline;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 div{
     display: block;
     text-align: center;
@@ -72,6 +80,7 @@ dt{
 a{
     color: white;
     font-size: 35px;
+    text-decoration: none;
 }
 
 .search{
