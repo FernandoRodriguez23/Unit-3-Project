@@ -98,6 +98,17 @@ label{
 button{
     background-color: rgba(0, 89, 255, 0.486);
 }
+footer{
+    color: white;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.h3{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 
