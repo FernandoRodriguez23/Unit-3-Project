@@ -7,12 +7,19 @@
         width: calc(100% - 20px);
         
     }
-
     img{
         width: 200px;
         height: 200px;
     }
-
+    h2 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+    }
+.logoLt {
+    width: 100px;
+    height: 100px;
+}
 .stacksoftires{
     grid-column: 2/3;
     grid-row: 2/3;
@@ -83,7 +90,7 @@ dt {
     font-size: 1.15rem;
     color: var(--color-text);
     display: inline;
-    padding: 20px;
+    padding: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -93,8 +100,8 @@ dt {
     grid-area: footer;
     padding: 1rem;
     justify-content: end;
-    color: dimgrey;
-    font-family: sans-serif;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -102,25 +109,147 @@ dt{
     display: inline;
     text-decoration: none;
     list-style: none;
-    padding: 20px;
 
 }
-
 a{
     color: white;
-    font-size: 35px;
+    font-size: 1.75rem;
     text-decoration: none;
 }
 
 .search{
     float: right;
     position: relative;
-    left: 200px;
+    left: 100px;
 
+}
+}
+
+@media(max-height: 100px){
+    .container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(6,20%);
+        gap: 5px;
+        width: calc(100% - 20px);
+        
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    h2 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+    }
+.logoLt {
+    width: 100px;
+    height: 100px;
+}
+.stacksoftires{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 10px;
+}
+
+.changetires{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 10px;
+}
+
+.charger{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    padding: 10px;
+}
+
+.cooktires{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 10px;
+}
+
+.radialtire{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 10px;
+}
+
+.onetire{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    grid-area: nav;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 1rem 0;
+    height: 100px;
+    justify-content: center;
+}
+.video{
+    width: max-content;
+    margin: 0 auto;
+}
+
+iframe{
+    justify-items: center;
+    margin: 0 auto;
+}
+html {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23030422' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23060844' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23090b66' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230c0f88' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230f13aa' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+dt {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    display: inline;
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-area: footer;
+    padding: 1rem;
+    justify-content: end;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
+dt{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
 
+}
+a{
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.search{
+    float: right;
+    position: relative;
+    left: 100px;
+
+}
 }
 
 

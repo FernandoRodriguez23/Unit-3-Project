@@ -13,7 +13,7 @@
         max-width: 95rem;
 
         grid-template-areas: 
-        "header nav search"
+        "nav nav nav"
         "main main main"
         "footer footer footer";
     }
@@ -28,7 +28,7 @@
         display: inline;
         text-decoration: none;
         list-style: none;
-        padding: 10px;
+        padding: 5px;
     }
     img {
         width: 250px;
@@ -45,7 +45,7 @@
         color: var(--color-text);
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         padding: 10px;
     }
 
@@ -77,23 +77,18 @@
     .logoLt {
         width: 100px;
         height: 100px;
-    }
-    .logoLeft {
-        display: flex;
-        grid-column: 1 / 2;
-        grid-area: header;
-        padding: 1rem;
+        padding-left: 70px;
     }
     .search {
         display: flex;
         grid-column: 3 / 4;
-        grid-area: search;
+        grid-area: nav;
         padding: 1rem;
         justify-content: center;
     }
     .nav {
         display: flex;
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
         grid-area: nav;
         padding: 1rem;
         
@@ -108,6 +103,10 @@
     .logoCr {
         width: 400px;
         height: 400px;
+        display: flex;
+        grid-column: 2 / 3;
+        grid-area: main;
+        padding: 1rem;
     }
     .footer {
         display: flex;
@@ -116,22 +115,17 @@
         padding: 1rem;
         justify-content: end;
     }
-    .header {
+    .head {
         display: flex;
-        grid-column: 2 / 4;
-        grid-area: header;
+        grid-column: 1 / 2;
+        grid-area: main;
         padding: 1rem;
-        justify-content: space-between;
     }
-
     .wrapper::after {
         content: "";
         clear: both;
         display: table;
     }
-
-
-
 }
 
 @media(max-height: 400px) {
@@ -148,14 +142,14 @@
         max-width: 95rem;
 
         grid-template-areas: 
-        "header nav search"
+        "nav nav search"
         "main main main"
         "footer footer footer";
     }
 
     html {
         background-color: #000000;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.79'%3E%3Cpolygon fill='%230e0e22' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231d1b44' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%232b2966' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%233a3688' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%234844aa' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23030422' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23060844' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23090b66' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230c0f88' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230f13aa' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
         background-size: cover;
     }
@@ -163,7 +157,7 @@
         display: inline;
         text-decoration: none;
         list-style: none;
-        padding: 10px;
+        padding: 5px;
     }
     img {
         width: 250px;
@@ -180,8 +174,8 @@
         color: var(--color-text);
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1.5rem;
-        padding: 10px;
+        font-size: 1.75rem;
+        padding: 15px;
     }
 
     header {
@@ -213,12 +207,6 @@
         width: 100px;
         height: 100px;
     }
-    .logoLeft {
-        display: flex;
-        grid-column: 1 / 2;
-        grid-area: header;
-        padding: 1rem;
-    }
     .search {
         display: flex;
         grid-column: 3 / 4;
@@ -228,7 +216,7 @@
     }
     .nav {
         display: flex;
-        grid-column: 2 / 3;
+        grid-column: 1 / 3;
         grid-area: nav;
         padding: 1rem;
         
@@ -243,6 +231,10 @@
     .logoCr {
         width: 400px;
         height: 400px;
+        display: flex;
+        grid-column: 2 / 3;
+        grid-area: main;
+        padding: 1rem;
     }
     .footer {
         display: flex;
@@ -251,14 +243,12 @@
         padding: 1rem;
         justify-content: end;
     }
-    .header {
+    .head {
         display: flex;
-        grid-column: 2 / 4;
-        grid-area: header;
+        grid-column: 1 / 2;
+        grid-area: main;
         padding: 1rem;
-        justify-content: space-between;
     }
-
     .wrapper::after {
         content: "";
         clear: both;

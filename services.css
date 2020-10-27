@@ -11,7 +11,7 @@
         max-width: 95rem;
 
         grid-template-areas: 
-        "header nav nav"
+        "nav nav nav"
         "price request customer"
         "footer footer footer";
     }
@@ -46,22 +46,17 @@
     a {
         text-decoration: none;
         color: var(--color-text);
-        font-size: 1.65rem;
+        font-size: 1.75rem;
         padding: 10px;
         font-family: 'Courier New', Courier, monospace;
     }
     input {
         padding-left: 20px;
-        font-family: 'Courier New', Courier, monospace;
     }
     footer {
         color: var(--color-text);
         font-size: .75rem;
         font-family: 'Courier New', Courier, monospace;
-    }
-    img {
-        width: 100px;
-        height: 100px;
     }
     legend {
         color: var(--color-text);
@@ -70,15 +65,15 @@
     }
     h2 {
         color: var(--color-text);
-        padding-left: 60px;
-        padding-top: 10px;
         font-family: 'Courier New', Courier, monospace;
+        text-align: center;
     }
-    .header {
-        display: flex;
-        grid-column: 1 / 2;
-        grid-area: header;
-        padding: 1rem;
+    nav {
+        padding-top: 20px;
+    }
+    .logoLeft {
+        width: 120px;
+        height: 120px;
     }
     .price {
         display: flex;
@@ -92,8 +87,6 @@
         grid-column: 2 / 3;
         grid-area: request;
         padding: 1rem;
-
-
     }
     .customer {
         display: flex;
@@ -121,7 +114,7 @@
         grid-area: nav;
         padding: 1rem;
         justify-content: center;
-        padding: 10px;
+        padding-top: 40px;
     }
 
     .wrapper::after {
@@ -144,7 +137,7 @@
         max-width: 95rem;
 
         grid-template-areas: 
-        "header nav nav"
+        "nav nav nav"
         "price request customer"
         "footer footer footer";
     }
@@ -179,22 +172,17 @@
     a {
         text-decoration: none;
         color: var(--color-text);
-        font-size: 1.65rem;
+        font-size: 1.75rem;
         padding: 10px;
         font-family: 'Courier New', Courier, monospace;
     }
     input {
         padding-left: 20px;
-        font-family: 'Courier New', Courier, monospace;
     }
     footer {
         color: var(--color-text);
         font-size: .75rem;
         font-family: 'Courier New', Courier, monospace;
-    }
-    img {
-        width: 100px;
-        height: 100px;
     }
     legend {
         color: var(--color-text);
@@ -203,15 +191,15 @@
     }
     h2 {
         color: var(--color-text);
-        padding-left: 60px;
-        padding-top: 10px;
         font-family: 'Courier New', Courier, monospace;
+        text-align: center;
     }
-    .header {
-        display: flex;
-        grid-column: 1 / 2;
-        grid-area: header;
-        padding: 1rem;
+    nav {
+        padding-top: 20px;
+    }
+    .logoLeft {
+        width: 120px;
+        height: 120px;
     }
     .price {
         display: flex;
@@ -225,8 +213,6 @@
         grid-column: 2 / 3;
         grid-area: request;
         padding: 1rem;
-
-
     }
     .customer {
         display: flex;
@@ -254,12 +240,12 @@
         grid-area: nav;
         padding: 1rem;
         justify-content: center;
-        padding: 10px;
+        padding-top: 40px;
     }
-
     .wrapper::after {
         content: "";
         clear: both;
         display: table;
     }
 }
+
