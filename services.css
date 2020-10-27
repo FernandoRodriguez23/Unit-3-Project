@@ -115,6 +115,7 @@
         padding: 1rem;
         justify-content: center;
         padding-top: 40px;
+        align-items: center;
     }
 
     .wrapper::after {
@@ -241,6 +242,7 @@
         padding: 1rem;
         justify-content: center;
         padding-top: 40px;
+        align-items: center;
     }
     .wrapper::after {
         content: "";

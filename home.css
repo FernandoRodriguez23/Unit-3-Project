@@ -91,7 +91,7 @@
         grid-column: 1 / 3;
         grid-area: nav;
         padding: 1rem;
-        
+        align-items: center;
     }
     .logoCenter {
         display: flex;
@@ -219,7 +219,7 @@
         grid-column: 1 / 3;
         grid-area: nav;
         padding: 1rem;
-        
+        align-items: center;
     }
     .logoCenter {
         display: flex;
